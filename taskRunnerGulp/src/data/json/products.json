@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "label": "product 1",
+        "price": 23,
+        "urlImg": "./assets/img/test.png"
+    },
+    {
+        "id": 2,
+        "label": "product 2",
+        "price": 29,
+        "urlImg": "./assets/img/imageTest.png"
+    },
+    {
+        "id": 3,
+        "label": "product 3",
+        "price": 5,
+        "urlImg": "./assets/img/otherTest.png"
+    }
+]
