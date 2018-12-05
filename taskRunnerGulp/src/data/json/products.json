@@ -1,20 +1,26 @@
 [
     {
         "id": 1,
-        "label": "product 1",
+        "label": "Logo Test",
         "price": 23,
         "urlImg": "./assets/img/test.png"
     },
     {
         "id": 2,
-        "label": "product 2",
+        "label": "Petite Maison",
         "price": 29,
         "urlImg": "./assets/img/imageTest.png"
     },
     {
         "id": 3,
-        "label": "product 3",
+        "label": "Un clavier test",
         "price": 5,
+        "urlImg": "./assets/img/otherTest.png"
+    },
+    {
+        "id": 4,
+        "label": "Un autre clavier",
+        "price": 4,
         "urlImg": "./assets/img/otherTest.png"
     }
 ]

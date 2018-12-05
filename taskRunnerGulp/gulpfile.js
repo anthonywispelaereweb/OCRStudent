@@ -44,6 +44,7 @@ gulp.task('js', function () {
    
 gulp.task('watch', function () {
     gulp.watch('src/*.html', ['html']);
+    gulp.watch('src/data/**/**.*', ['copyData']);
     gulp.watch('src/styles/sass/**/*.scss', ['sass']);
     gulp.watch('src/scripts/**/*.js', ['js']);
 });
