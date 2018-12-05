@@ -1,17 +1,18 @@
+
 var global = {
 
     data: {
-        products: [
-            
-        ]
+        title : "Ma Demo Task Runner et sass incluant une decouverte javasripts",
+        products: []
     },
     constante: {
-        firstTitle: document.getElementById("#title")
+        firstTitle: $("#title")
     },
     methods: {
         initialize: () => {
             global.methods.console("Main.js chargé");
             global.methods.initializeProducts();
+            global.constante.firstTitle.html(global.data.title);
         },
         console: (maVariable) => {
             console.log("ma console : ", maVariable)

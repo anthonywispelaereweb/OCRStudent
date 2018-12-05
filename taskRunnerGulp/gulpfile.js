@@ -35,6 +35,9 @@ gulp.task('copyData', function () {
     gulp.src('src/data/**/*.*')
     .pipe(gulp.dest('./dist/assets/'))
     .pipe(connect.reload());
+    gulp.src('src/*.ico')
+    .pipe(gulp.dest('./dist/'))
+
 });
 gulp.task('js', function () {
     gulp.src('src/scripts/**/*.js')
