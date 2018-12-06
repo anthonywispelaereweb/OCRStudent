@@ -10,16 +10,19 @@ var global = {
     },
     methods: {
         initialize: () => {
-            global.methods.console("Main.js chargé");
+            //global.methods.console("Main.js chargé");
             global.methods.initializeProducts();
-            global.constante.firstTitle.html(global.data.title);
+            //global.constante.firstTitle.html(global.data.title);
         },
         console: (maVariable) => {
             console.log("ma console : ", maVariable)
         },
         initializeProducts: function() {
+            console.log('1 - J\'appel le service pour trouver un resultat');
             services.getData("./assets/json/products.json").then(function(data) {
+                console.log('4 - Le service me renvoi le resultat trouve');
                 global.data.products = data;
+                
                 for( var i = 0; i < global.data.products.length ; i++) {
                     $("#productsCtn")
                         .append("<div class=\"product-ctn\" id=" + "product"+ global.data.products[i].id +"></div>")
